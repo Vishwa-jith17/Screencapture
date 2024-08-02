@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+    <style>
+        #remoteVideo {
+            width: 100%;
+            height: auto;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <script>
+        const remoteVideo = document.getElementById('remoteVideo');
+        const pc = new RTCPeerConnection();
+
+        pc.ontrack = event => {
+            console.log('Track received:', event);
+            if (event.streams && event.streams[0]) {
+                remoteVideo.srcObject = event.streams[0];
+            } else {
+                let inboundStream = new MediaStream();
+                inboundStream.addTrack(event.track);
+                remoteVideo.srcObject = inboundStream;
+            }
+        };
+
+        fetch('/offer', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ sdp: pc.localDescription ? pc.localDescription.sdp : '' })
+        })
+            .then(response => response.json())
+            .then(offer => {
+                console.log('Received offer:', offer);
+                const offerDesc = new RTCSessionDescription(offer);
+                return pc.setRemoteDescription(offerDesc);
+            })
+            .then(() => {
+                console.log('Set remote description');
+                return pc.createAnswer();
+            })
+            .then(answer => {
+                console.log('Created answer:', answer);
+                return pc.setLocalDescription(answer);
+            })
+            .then(() => {
+                console.log('Set local description:', pc.localDescription);
+                return fetch('/offer', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ sdp: pc.localDescription.sdp })
+                });
+            })
+            .then(response => response.json())
+            .then(answer => {
+                console.log('Received answer:', answer);
+                const answerDesc = new RTCSessionDescription(answer);
+                return pc.setRemoteDescription(answerDesc);
+            })
+            .then(() => {
+                console.log('Set remote description with answer');
+            })
+            .catch(error => {
+                console.error('Error setting up WebRTC:', error);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Screen Streaming</title>
+</head>
+<body>
+    <h1>WebRTC Screen Streaming</h1>
+    <button id="start">Start Streaming</button>
+    <textarea id="sdp-offer" rows="10" cols="80"></textarea>
+    <script>
+        document.getElementById('start').onclick = async () => {
+            const pc = new RTCPeerConnection();
+            pc.onicecandidate = (event) => {
+                if (event.candidate) {
+                    console.log('New ICE candidate: ', event.candidate);
+                }
+            };
+
+            const stream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+            stream.getTracks().forEach(track => pc.addTrack(track, stream));
+
+            const offer = await pc.createOffer();
+            await pc.setLocalDescription(offer);
+
+            document.getElementById('sdp-offer').value = offer.sdp;
+
+            const response = await fetch('/offer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sdp: pc.localDescription.sdp })
+            });
+
+            const answer = await response.json();
+            await pc.setRemoteDescription(new RTCSessionDescription(answer));
+        };
+    </script>
+</body>
+</html>

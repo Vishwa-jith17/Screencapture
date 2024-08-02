@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\internproject1\\capturescreen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\templates\\server.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:templates\\server.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\webrtc_server.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:webrtc_server.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\templates\\view.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:templates\\view.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\capture.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:capture.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|E:\\internproject1\\capturescreen\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4BBDB728-232F-41A5-8984-94FE2C6FE50A}|capturescreen.pyproj|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "server.py",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\templates\\server.py",
+              "RelativeDocumentMoniker": "templates\\server.py",
+              "ToolTip": "E:\\internproject1\\capturescreen\\templates\\server.py",
+              "RelativeToolTip": "templates\\server.py",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-07-13T13:07:41.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\requirements.txt",
+              "RelativeDocumentMoniker": "requirements.txt",
+              "ToolTip": "E:\\internproject1\\capturescreen\\requirements.txt",
+              "RelativeToolTip": "requirements.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-13T09:03:19.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "view.html",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\templates\\view.html",
+              "RelativeDocumentMoniker": "templates\\view.html",
+              "ToolTip": "E:\\internproject1\\capturescreen\\templates\\view.html",
+              "RelativeToolTip": "templates\\view.html",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-13T09:01:29.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\templates\\index.html",
+              "RelativeDocumentMoniker": "templates\\index.html",
+              "ToolTip": "E:\\internproject1\\capturescreen\\templates\\index.html",
+              "RelativeToolTip": "templates\\index.html",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-13T09:01:08.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "webrtc_server.py",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\webrtc_server.py",
+              "RelativeDocumentMoniker": "webrtc_server.py",
+              "ToolTip": "E:\\internproject1\\capturescreen\\webrtc_server.py",
+              "RelativeToolTip": "webrtc_server.py",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-07-13T09:00:23.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "capture.py",
+              "DocumentMoniker": "E:\\internproject1\\capturescreen\\capture.py",
+              "RelativeDocumentMoniker": "capture.py",
+              "ToolTip": "E:\\internproject1\\capturescreen\\capture.py",
+              "RelativeToolTip": "capture.py",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-07-13T08:59:50.473Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+aiortc
+flask
+opencv-python
+pyautogui
+numpy
+pyaudio
+pynput
